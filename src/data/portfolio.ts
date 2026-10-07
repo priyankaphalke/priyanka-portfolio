@@ -27,10 +27,10 @@ export const profile = {
 }
 
 export const links = {
-  github: 'YOUR_GITHUB_URL',
-  linkedin: 'YOUR_LINKEDIN_URL',
-  email: 'YOUR_EMAIL',
-  resume: '/resume.pdf', // replace public/resume.pdf with your real resume
+  github: 'https://github.com/priyankaphalke',
+  linkedin: 'www.linkedin.com/in/priyanka-phalke-b2bb21313',
+  email: 'priyankaphalke265@gmail.com',
+  resume: '/Priyanka_Phalke_Data_Science_Resume.pdf', // replace public/resume.pdf with your real resume
 }
 
 export const isPlaceholder = (v?: string) => !v || v.startsWith('YOUR_') || v.startsWith('Add ')
