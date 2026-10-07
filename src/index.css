@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg:12 16 26; --surface:20 26 42; --ink:236 238 244; --muted:150 158 178; --line:255 255 255; --accent:138 164 255; --sand:217 184 143; }
+:root.light { --bg:248 247 244; --surface:255 255 255; --ink:20 24 36; --muted:88 96 116; --line:20 24 36; --accent:52 76 196; --sand:140 98 52; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-bg text-ink font-sans antialiased; transition: background-color .3s, color .3s; }
+:focus-visible { outline: 2px solid rgb(var(--accent)); outline-offset: 3px; border-radius: 6px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+.card { @apply rounded-2xl border border-line/10 bg-surface/70 backdrop-blur-sm; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition; }
+.btn-primary { @apply bg-ink text-bg hover:opacity-90; }
+.btn-ghost { @apply border border-line/20 text-ink hover:bg-line/10; }
+.chip { @apply rounded-full border border-line/15 px-2.5 py-1 text-xs text-muted; }
+.container-x { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+.section { @apply py-20 sm:py-28; }
+.placeholder { @apply border-dashed; }
